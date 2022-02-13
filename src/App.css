@@ -1,0 +1,12 @@
+.navbar {
+  padding: .0 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  padding: 2px 10px;
+  font-size: .9rem;
+}
+
+.active-menu-item{
+  font-weight: bold;
+}

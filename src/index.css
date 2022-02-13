@@ -1,0 +1,36 @@
+@import "assets/css/bootstrap.min.css";
+
+@font-face {
+  font-family: 'iransans';
+  src: url('assets/fonts/IRANSans-Light-web.woff') format('woff'), /* Pretty Modern Browsers */
+  url('assets/fonts/IRANSans-Light-web.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'iransans';
+  src: url('assets/fonts/IRANSans-Bold-web.woff') format('woff'), /* Pretty Modern Browsers */
+  url('assets/fonts/IRANSans-Bold-web.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  font-family: 'iransans',sans-serif;
+ direction: rtl;
+ text-align: right;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.selected-row{
+  background-color: yellow !important;
+}
+
+.card-title {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
