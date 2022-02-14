@@ -83,6 +83,15 @@ export const Sidebar = () => {
                             Formik
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            // activeClassName="active"
+                            className="simple-text logo-normal"
+                            to="/form-ref">
+                            <i className="nc-icon nc-diamond"></i>
+                            FormRef
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </div>

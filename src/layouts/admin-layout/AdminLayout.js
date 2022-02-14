@@ -14,6 +14,7 @@ import PageNotFount from '../../components/not-fount/page-not-fount';
 import '../../assets/css/paper-dashboard.css';
 import '../../assets/css/demo.css';
 import UserPost from '../../components/post/UserPost';
+import FormWithRef from '../../sampleForm/FormWithRef';
 const AdminLayout = () => {
     return (
         <div className="wrapper">
@@ -31,6 +32,7 @@ const AdminLayout = () => {
                         <Route path="/formdata" element={<FormDataSample />} />
                         <Route path="/react-hook-form" element={<ReactHookForm />} />
                         <Route path="/form-sample" element={<FormikSample />} />
+                        <Route path="/form-ref" element={<FormWithRef />} />
                         {/* <Route path="/login" exact element={<Login />} /> */}
                         <Route path="*" element={<PageNotFount />} />
                     </Routes>
