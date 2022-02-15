@@ -15,6 +15,7 @@ import '../../assets/css/paper-dashboard.css';
 import '../../assets/css/demo.css';
 import UserPost from '../../components/post/UserPost';
 import FormWithRef from '../../sampleForm/FormWithRef';
+import FetchCrud from '../../crud/FetchCrud';
 const AdminLayout = () => {
     return (
         <div className="wrapper">
@@ -27,6 +28,7 @@ const AdminLayout = () => {
                         <Route path="/products" element={<ProductContainer />} />
                         <Route path="/category" element={<CategoryList />} />/
                         <Route path="/userPost" element={<UserPost />} />
+                        <Route path="/fetchCrud" element={<FetchCrud />} />
                         <Route path="/products/:id" element={<ProductDetails />} />
                         <Route path="products/info" element={<ProductDetails />} />
                         <Route path="/formdata" element={<FormDataSample />} />

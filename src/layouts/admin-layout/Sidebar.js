@@ -42,6 +42,16 @@ export const Sidebar = () => {
                             لیست کاربران
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            // activeClassName="active"
+                            className="simple-text logo-normal"
+                            to="/fetchCrud"
+                        >
+                            <i className="nc-icon nc-bank"></i>
+                            fetch Crud
+                        </NavLink>
+                    </li>
 
                     <li>
                         <NavLink

@@ -16,16 +16,16 @@ const PostInfo = ({ info }) => {
                 </div>
                 <p>
                     <a
-                        class="btn btn-primary"
+                        class="btn btn-danger"
                         data-toggle="collapse"
                         href="#collapseExample"
                         role="button"
                         aria-expanded="false"
                         aria-controls="collapseExample"
                     >
-                        Link with href
+                       comment
                     </a>
-                    <button
+                    {/* <button
                         class="btn btn-primary"
                         type="button"
                         data-toggle="collapse"
@@ -34,7 +34,7 @@ const PostInfo = ({ info }) => {
                         aria-controls="collapseExample"
                     >
                         Button with data-target
-                    </button>
+                    </button> */}
                 </p>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
