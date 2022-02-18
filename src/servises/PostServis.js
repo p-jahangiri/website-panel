@@ -1,3 +1,6 @@
+// const baSeApiUrl = process.env.REACT_APP_API_URL
+
+
 // export const insert = (data) => {
 //     fetch('https://jsonplaceholder.typicode.com/posts', {
 //         method: 'POST',

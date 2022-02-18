@@ -34,3 +34,7 @@ code {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.completed-row {
+  background-color: rgb(80, 233, 80);
+}

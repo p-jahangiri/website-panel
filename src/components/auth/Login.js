@@ -2,9 +2,10 @@ import React from 'react'
 import './login.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import {useNavigate} from 'react-router-dom'
+import AdminLayout from 'layouts/admin-layout/AdminLayout';
 
 const Login = () => {
-    const Navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             <div className="login-wrap" style={{marginTop:'10vh'}}>
@@ -42,7 +43,7 @@ const Login = () => {
                                         localStorage.setItem('user', JSON.stringify(user));
 
                                         //redirect to dashboard page
-                                        Navigate.push('/');
+                                        navigate("/");
                                     } else {
                                         //alert(values.email);
                                         alert('نام کاربری یا رمز عبور صحیح نمی باشد');

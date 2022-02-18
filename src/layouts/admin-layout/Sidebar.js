@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/img/logo-nikamooz.png';
+import logo from 'assets/img/logo-nikamooz.png';
 export const Sidebar = () => {
     return (
         <div className="sidebar" data-color="white" data-active-color="danger">
@@ -12,7 +12,7 @@ export const Sidebar = () => {
             <div className="sidebar-wrapper">
                 <ul className="nav">
                     <li>
-                        <NavLink
+                        <NavLink 
                             // activeClassName="active"
                             className="simple-text logo-normal"
                             to="/"
@@ -50,6 +50,16 @@ export const Sidebar = () => {
                         >
                             <i className="nc-icon nc-bank"></i>
                             fetch Crud
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            // activeClassName="active"
+                            className="simple-text logo-normal"
+                            to="/axiosCrud"
+                        >
+                            <i className="nc-icon nc-bank"></i>
+                            axios Crud
                         </NavLink>
                     </li>
 

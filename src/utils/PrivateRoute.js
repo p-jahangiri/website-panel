@@ -1,23 +1,20 @@
-import React from 'react';
-import { Navigate, Route, useLocation } from 'react-router-dom';
+import React from "react";
+import { useNavigate, Route, useLocation } from "react-router-dom";
 
-//... => rest parameters 
+//... => rest parameters
 
-const PrivateRoute = ({ element: Element, ...rest }) => {
-    const location = useLocation();
-
-    return (
-        <Route {...rest}>
-            {localStorage.getItem('user') ? (
-                <Element />
-            ) : (   <Route path="*/" element={<Navigate to='/login' />}
-                
-                
-            />
-                // <Navigate to={{ pathname: '/login', state: { from: location } }} />
-            )}
-        </Route>
-    );
+const PrivateRoute = ({ element, ...rest }) => {
+  const location = useLocation();
+const navigate = useNavigate();
+  return (
+    <Route {...rest}>
+      {localStorage.getItem('user') ?
+        <element />
+      :
+        <navigate to={{ pathname: "/login", state: { from: location } }} />
+      }
+    </Route>
+  );
 };
 
 export default PrivateRoute;

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/css/demo.css'
+import 'assets/css/demo.css'
 
 export const TopNavbar = () => {
     //get data from localStorage

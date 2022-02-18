@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { UserCombo } from '../custom-components/UserCOmbo';
+import { UserCombo } from '../custom-components/UserCombo';
 import { insert, getAll, remove } from '../servises/PostServis';
 const FetchCrud = () => {
     const titleRef = useRef();
@@ -10,10 +10,13 @@ const FetchCrud = () => {
     const changeUser = (id) => {
         setUserId(id);
     };
+
     useEffect(async () => {
         const results = await getAll();
         setPosts(results);
     }, []);
+
+
     const save = async (event) => {
         event.preventDefault();
         setIsLoading(true);
@@ -25,10 +28,12 @@ const FetchCrud = () => {
         const result = await insert(post);
         setIsLoading(false);
     };
-    const removeItem = async(id ) => {
-    const result= await remove(id);
-    setPosts([...posts.filter(q => q.id != id )])
-    }
+
+    const removeItem = async (id) => {
+        const result = await remove(id);
+        setPosts([...posts.filter((q) => q.id != id)]);
+    };
+    
     return (
         <>
             <div className="card">
@@ -62,7 +67,7 @@ const FetchCrud = () => {
                     </div>
 
                     <div className="col">
-                        <table className='table table-striped table-bordered'>
+                        <table className="table table-striped table-bordered">
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -80,7 +85,12 @@ const FetchCrud = () => {
                                         <td>{item.userId}</td>
                                         <td>{item.body}</td>
                                         <td>
-                                            <button onClick={() => removeItem(item.id)} className='btn btn-danger btn-sm'>delete</button>
+                                            <button
+                                                onClick={() => removeItem(item.id)}
+                                                className="btn btn-danger btn-sm"
+                                            >
+                                                delete
+                                            </button>
                                         </td>
                                     </tr>
                                 ))}
