@@ -6,7 +6,7 @@ export const Sidebar = () => {
         <div className="sidebar" data-color="white" data-active-color="danger">
             <div className="logo">
                 <NavLink className="simple-text logo-normal" to="/">
-                    <img src={logo} width="64%" />
+                    {/* <img src={logo} width="64%" /> */}
                 </NavLink>
             </div>
             <div className="sidebar-wrapper">
